@@ -17,11 +17,11 @@ pub mod temp_convert {
         println!("You would like to convert {} to {}, (y)es (n)o",temp, temp_type );
         io::stdin().read_line(&mut user_agree);
 
-        let temp: u32 = match temp.trim().parse() {
+        let temp: f32 = match temp.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 let temp_type = "n";
-                0
+                0 as f32
             },
         };
 
@@ -34,7 +34,7 @@ pub mod temp_convert {
         }
 
     }
-    fn temp_convert(temp: u32, temp_type: &str) {
+    fn temp_convert(temp: f32, temp_type: &str) {
         if temp_type.trim() == "c" {
             println!("Temperature in Celcius: {}", fah_to_cel(temp) );
         } else if temp_type.trim() == "f" {
@@ -44,13 +44,13 @@ pub mod temp_convert {
         }
     }
 
-    fn cel_to_fah(temp: u32) -> u32 {
-        let output = (temp * 9/5) +32;
+    fn cel_to_fah(temp: f32) -> f32 {
+        let output: f32 = ((temp * 9./5.) +32.) as f32;
         output
     }
 
-    fn fah_to_cel(temp: u32) -> u32 {
-        let output = (temp -32) *5/9;
+    fn fah_to_cel(temp: f32) -> f32 {
+        let output: f32 = ((temp -32.) *5./9.) as f32;
         output
     }
 
