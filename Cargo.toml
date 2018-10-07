@@ -5,3 +5,11 @@ authors = ["Alexander Wilkinson <alexwilkinson@gmail.com>"]
 
 [dependencies]
 rand = "0.5.5"
+
+[lib]
+name = "main_lib"
+path = "src/projects/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
