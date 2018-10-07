@@ -2,17 +2,22 @@ extern crate main_lib;
 use std::io;
 
 fn main() {
-    // main_lib::test();
     user_select();
 }
 
+// User selection logic loop that creates the selection menu for the user
 fn user_select() {
     loop {
-        println!("Select a project from the list, or press x to exit" );
+        println!("
+        Select a project from the list:
+        -------------------------
+        1 = Temperature converter
+        -------------------------
+        or e(x)it" );
 
         let mut user_input = String::new();
 
-        io::stdin().read_line(&mut user_input);
+        io::stdin().read_line(&mut user_input).expect("Unable to read user command");
 
         println!("user input: {}", user_input );
 
