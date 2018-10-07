@@ -19,7 +19,7 @@ fn user_select() {
         if user_input.trim() == "x" {
             break;
         } else if user_input.trim() == "1" {
-            main_lib::temp_main::temp_convert::temp();
+            main_lib::temp_main::temp_convert::main();
         }
 
 
