@@ -5,6 +5,9 @@
 #[path="./temp/temp_main.rs"]
 pub mod temp_main;
 
+#[path="./maths/fibonacci_main.rs"]
+pub mod fibonacci_main;
+
 pub fn test() {
     println!("Test print" );
 }

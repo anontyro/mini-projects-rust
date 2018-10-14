@@ -12,6 +12,7 @@ fn user_select() {
         Select a project from the list:
         -------------------------
         1 = Temperature converter
+        2 = Fibonacci calculator
         -------------------------
         or e(x)it" );
 
@@ -25,6 +26,8 @@ fn user_select() {
             break;
         } else if user_input.trim() == "1" {
             main_lib::temp_main::temp_convert::main();
+        } else if user_input.trim() == "2" {
+            main_lib::fibonacci_main::fibonacci::main();
         }
 
 
