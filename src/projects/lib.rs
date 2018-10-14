@@ -8,6 +8,5 @@ pub mod temp_main;
 #[path="./maths/fibonacci_main.rs"]
 pub mod fibonacci_main;
 
-pub fn test() {
-    println!("Test print" );
-}
+#[path="./other/twelve_days_xmas.rs"]
+pub mod twelve_days_main;

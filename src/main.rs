@@ -13,6 +13,7 @@ fn user_select() {
         -------------------------
         1 = Temperature converter
         2 = Fibonacci calculator
+        3 = Twelve Days Of Christmas
         -------------------------
         or e(x)it" );
 
@@ -28,6 +29,8 @@ fn user_select() {
             main_lib::temp_main::temp_convert::main();
         } else if user_input.trim() == "2" {
             main_lib::fibonacci_main::fibonacci::main();
+        } else if user_input.trim() == "3" {
+            main_lib::twelve_days_main::twelve_days::main();
         }
 
 
