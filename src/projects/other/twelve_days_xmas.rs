@@ -1,4 +1,7 @@
-
+/**
+ * TWELVE DAYS OF CHRISTMAS
+ * basic program that displays the classic christmas song lines
+ */
 pub mod twelve_days {
     use std::io;
 
@@ -16,6 +19,7 @@ pub mod twelve_days {
 
     }
 
+    /** Method that prints the specific twelve days line from the line number entered */
     fn twelve_day_out(num: u32) {
 
         match num {
@@ -30,6 +34,7 @@ pub mod twelve_days {
 
     }
 
+    // helper function used to get the current value for the line
     fn get_day_value(num: u32) -> String {
         let value_list =
         [
